@@ -1,0 +1,114 @@
+body{
+    background-color: #CDF0EA;
+    font-family: 'Space Mono', monospace;
+    font-weight:  400, 500, 700;
+    color:hsl(186, 14%, 43%);
+}
+table{
+   
+    width: 80%;
+}
+p{
+    margin: 2%;
+}
+input[type="text"]{
+    text-align: right;
+    width:38%;
+    margin-top: 2%;
+    height: 25px;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    font-weight:  400, 500, 700;
+    background-color:hsl(189, 41%, 97%);
+    color:hsl(186, 14%, 43%);
+}
+input[type=button] {
+
+
+   width:70px;
+   height: 40px;
+   margin:2% 0 0;
+   background-color:hsl(183, 100%, 15%);
+   border: none;
+   color:white;
+   font-family: 'Space Mono', monospace;
+   font-weight:  400, 500, 700;
+   border-radius:3px;
+   cursor: pointer;
+
+    }
+    input[type=text].ss{
+      text-align: center;
+      width:70px;
+      height: 35px;
+      margin:2% 0 0;
+      background-color:white;
+      border: none;
+      color:#515E63;
+      font-family: 'Space Mono', monospace;
+      font-weight:  400, 500, 700;
+      border-radius:3px;
+      cursor: pointer;
+    }
+input[type=button]:hover {
+        background-color:hsl(172, 67%, 45%);
+        color:hsl(183, 100%, 15%);
+ }
+ input[type=text]:hover{
+   background-color:hsl(150, 11%, 86%);
+ }
+
+.heading{
+
+    margin-top:5% ;
+    letter-spacing:10px;
+    font-size:1.4rem ;
+    text-align: center;
+}
+.billbody{
+    width: 700px;
+    height:350px;
+    margin:3%  27%;
+    border-radius: 20px;
+    background-color:hsl(0, 0%, 100%);
+}
+
+.form{
+    padding: 4% 5%;
+}
+
+.display{
+    position: relative;
+    bottom: 95%;
+    margin:0 48%;
+    border-radius: 4%;
+
+    background-color: hsl(183, 100%, 15%);
+    width:330px;
+    height:300px
+}
+
+.amount{
+  padding:8% 7% 0;
+  font-size:0.8em;
+  color:hsl(0, 0%, 100%);
+}
+.small{
+    font-size: 0.7rem;
+    color:hsl(186, 14%, 43%);;
+}
+.result{
+   font-size:1.9rem;
+   position: relative;
+   bottom:9px;
+   left:80px;
+   color: hsl(172, 67%, 45%);
+}
+input[type=button].reset{
+    width:80%;
+    margin:80px 0 0 30px;
+    background-color: hsl(182, 73%, 20%);
+}
+input[type=button].reset:hover{
+    background-color: hsl(172, 67%, 45%);
+}
