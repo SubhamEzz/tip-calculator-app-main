@@ -5,7 +5,7 @@ body{
     color:hsl(186, 14%, 43%);
 }
 table{
-   
+
     width: 80%;
 }
 p{
@@ -14,13 +14,14 @@ p{
 input[type="text"]{
     text-align: right;
     width:38%;
-    margin-top: 2%;
-    height: 25px;
+    margin-top: 1%;
+    height: 30px;
     border: none;
     font-family: 'Space Mono', monospace;
     font-weight:  400, 500, 700;
+    font-size: 1.2rem;
     background-color:hsl(189, 41%, 97%);
-    color:hsl(186, 14%, 43%);
+    color:hsl(172, 67%, 45%);
 }
 input[type=button] {
 
@@ -106,7 +107,7 @@ input[type=button]:hover {
 }
 input[type=button].reset{
     width:80%;
-    margin:80px 0 0 30px;
+    margin:85px 0 0 40px;
     background-color: hsl(182, 73%, 20%);
 }
 input[type=button].reset:hover{
