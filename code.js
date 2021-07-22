@@ -1,62 +1,39 @@
 
-
-
-
-
-$("#five").click(function(){
+function discount(per){
   var amount = $("#bill").val();
   var numberOfPeople = $("#npeople").val();
-  var payAmount = amount*0.05;
-  var perPay = (amount-payAmount)/numberOfPeople;
-  $("#tip").text(payAmount+".00");
-  $("#mBill").text(perPay+".00");
+  var payAmount = (amount*per).toFixed(2);
+  var perPay = ((amount-payAmount)/numberOfPeople).toFixed(2);
+  $("#tip").text(payAmount);
+  $("#mBill").text(perPay);
+}
+$("#five").click(function(){
+
+ discount(0.05);
 
 });
 $("#ten").click(function(){
-  var amount = $("#bill").val();
-  var numberOfPeople = $("#npeople").val();
-  var payAmount = amount*0.10;
-  var perPay =(amount-payAmount)/numberOfPeople;
-  $("#tip").text(payAmount+".00");
-  $("#mBill").text(perPay+".00");
+   discount(0.10);
 
 });
 $("#fif").click(function(){
-  var amount = $("#bill").val();
-  var numberOfPeople = $("#npeople").val();
-  var payAmount = amount*0.15;
-  var perPay = (amount-payAmount)/numberOfPeople;
-  $("#tip").text(payAmount+".00");
-  $("#mBill").text(perPay+".00");
+ discount(0.15);
 
 });
 $("#twentyfif").click(function(){
-  var amount = $("#bill").val();
-  var numberOfPeople = $("#npeople").val();
-  var payAmount = amount*0.25;
-  var perPay = (amount-payAmount)/numberOfPeople;
-  $("#tip").text(payAmount+".00");
-  $("#mBill").text(perPay+".00");
+ discount(0.25);
 
 });
 $("#fifty").click(function(){
-  var amount = $("#bill").val();
-  var numberOfPeople = $("#npeople").val();
-  var payAmount = amount*0.50;
-  var perPay = (amount-payAmount)/numberOfPeople;
-  $("#tip").text(payAmount+".00");
-  $("#mBill").text(perPay+".00");
+ discount(0.50);
 
 });
 
 $("#custom").click(function(){
-  var amount = $("#bill").val();
-  var numberOfPeople = $("#npeople").val();
-  var payAmount = amount*($("#custom").val())/100;
-  var perPay = (amount-payAmount)/numberOfPeople;
-  $("#tip").text(payAmount+".00");
-  $("#mBill").text(perPay+".00");
+discount($("#custom").val());
 });
+
+
 $("#reset").click(function(){
   $("#tip, #mBill").text("0.00");
   $("#bill , #custom , #npeople").val('');
