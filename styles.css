@@ -99,10 +99,10 @@ input[type=button]:hover {
     color:hsl(186, 14%, 43%);;
 }
 .result{
-   font-size:1rem;
+   font-size:1.9rem;
    position: relative;
    bottom:9px;
-   left:50px;
+   left:80px;
    color: hsl(172, 67%, 45%);
 }
 input[type=button].reset{
